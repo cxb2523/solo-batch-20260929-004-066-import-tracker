@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>import_tracker track_imports trace</title>
+<style>
+body { font-family: sans-serif; margin: 2em; }
+h1 { font-size: 1.4em; }
+h2 { font-size: 1.1em; margin-top: 1.5em; }
+ul { list-style: none; padding-left: 1.2em;
+     border-left: 1px solid #bbb; }
+li.module { font-family: monospace; }
+.depth0 { font-weight: bold; }
+section { margin-bottom: 1em; }
+</style>
+</head>
+<body>
+<h1>Captured import tree</h1>
+<section><h2>from ti_demo_alpha import child</h2><ul><li class="module depth0">ti_demo_alpha</li>
+<ul>
+<li class="module depth1">child</li>
+</ul></ul></section>
+<section><h2>import ti_demo_beta.child</h2><ul><li class="module depth0">ti_demo_beta</li>
+<ul>
+<li class="module depth1">child</li>
+</ul></ul></section>
+</body>
+</html>
